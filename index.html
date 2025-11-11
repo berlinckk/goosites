@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>GoSites — Site pronto para vender | Bonito, rápido e que converte</title>
+  <meta name="description" content="Sites prontos e otimizados para vendas: responsivo, rápido, SEO local e integração direta com WhatsApp. Ative hoje e comece a vender.">
+  <meta name="keywords" content="site que vende, site para pequenas empresas, site responsivo, GoSites, ativar site">
+  <meta name="theme-color" content="#0A84FF">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="GoSites — Site pronto para vender">
+  <meta property="og:description" content="Sites prontos e otimizados para vendas: responsivo, rápido e integração com WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://seusite.com">
+  <meta property="og:image" content="/lugar.jpg">
+
+  <!-- Structured Data (LocalBusiness light) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "GoSites",
+    "url": "https://seusite.com",
+    "logo": "https://seusite.com/logo.png",
+    "description": "Sites prontos para vender. Bonito, rápido e que converte.",
+    "telephone": "+55 47 99999-9999",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "São Francisco do Sul",
+      "addressRegion": "SC",
+      "addressCountry": "BR"
+    }
+  }
+  </script>
+
+  <!-- Fonts (fast connection) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --brand:#0A84FF; --brand-600:#005FCC; --bg:#0f1720; --muted:#6b7280; --card:#0f1720;
+      --radius:18px; --container:1100px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial;line-height:1.5;color:#0b1220;background:linear-gradient(180deg,#ffffff 0%, #fbfbff 100%);-webkit-font-smoothing:antialiased;}
+    a{color:var(--brand);text-decoration:none}
+
+    /* page layout */
+    .wrap{max-width:var(--container);margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,var(--brand),var(--brand-600));display:flex;align-items:center;justify-content:center;color:white;font-weight:800;font-size:18px;box-shadow:0 6px 18px rgba(10,132,255,0.18)}
+    header h1{font-size:1.05rem;color:#071033}
+    header .action{background:var(--brand);color:white;padding:10px 16px;border-radius:12px;font-weight:700;box-shadow:0 6px 18px rgba(10,132,255,0.12)}
+    header .action:active{transform:translateY(1px)}
+
+    /* hero */
+    .hero{display:grid;grid-template-columns:1fr;gap:28px;align-items:center;padding:56px 0}
+    .hero-inner{background:linear-gradient(180deg, rgba(10,132,255,0.06), rgba(0,95,204,0.02));border-radius:24px;padding:36px;display:flex;gap:30px;align-items:center}
+    .hero-copy{flex:1}
+    .eyebrow{display:inline-block;padding:6px 10px;border-radius:999px;background:#eaf4ff;color:var(--brand);font-weight:700;font-size:0.85rem}
+    .title{font-size:2rem;line-height:1.05;color:#071033;margin-top:10px;font-weight:800}
+    .subtitle{margin-top:12px;color:var(--muted);max-width:62ch}
+
+    .hero-media{width:360px;height:220px;border-radius:14px;background:linear-gradient(135deg,#fff,#f3f7ff);box-shadow:0 10px 30px rgba(11,18,51,0.06);display:flex;flex-direction:column;justify-content:center;align-items:center}
+    .hero-media img{max-width:86%;height:auto;border-radius:10px}
+
+    /* features */
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:28px}
+    .card{background:white;padding:18px;border-radius:14px;box-shadow:0 6px 20px rgba(11,18,51,0.04);border:1px solid rgba(11,18,51,0.03)}
+    .card h3{color:var(--brand);margin-bottom:8px}
+    .card p{color:var(--muted);font-size:0.95rem}
+
+    /* pricing row */
+    .pricing{display:flex;gap:12px;margin-top:26px}
+    .price{flex:1;padding:18px;border-radius:14px;background:linear-gradient(180deg,#fff,#fbfdff);box-shadow:0 8px 30px rgba(11,18,51,0.04);border:1px solid rgba(11,18,51,0.03)}
+    .price h4{font-weight:800;color:#071033}
+    .price .value{font-size:1.25rem;color:var(--brand);font-weight:900;margin-top:8px}
+    .muted{color:var(--muted);font-size:0.95rem}
+
+    /* cta */
+    .cta{margin:40px 0;padding:22px;border-radius:16px;background:linear-gradient(90deg,rgba(10,132,255,0.98),rgba(0,95,204,0.95));color:white;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .cta h3{font-size:1.15rem}
+    .cta .cta-btn{background:white;color:var(--brand);padding:12px 18px;border-radius:12px;font-weight:800}
+
+    /* floating whatsapp */
+    .whatsapp{position:fixed;right:18px;bottom:18px;background:linear-gradient(135deg,var(--brand),var(--brand-600));color:white;padding:14px;border-radius:999px;box-shadow:0 12px 30px rgba(10,132,255,0.18);display:flex;gap:10px;align-items:center;font-weight:800}
+    .whatsapp small{font-weight:600}
+
+    footer{margin-top:42px;padding:28px 0;color:var(--muted);font-size:0.95rem;text-align:center}
+
+    /* responsive tweaks */
+    @media(min-width:900px){.hero{grid-template-columns:1fr} .hero-inner{flex-direction:row}} 
+    @media(max-width:720px){.hero-media{display:none}.wrap{padding:18px}.title{font-size:1.45rem}}
+
+    /* subtle animations */
+    .fade-up{opacity:0;transform:translateY(6px);transition:opacity .5s ease,transform .5s ease}
+    .fade-up.visible{opacity:1;transform:none}
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">GS</div>
+        <div>
+          <h1>GoSites</h1>
+          <div style="font-size:0.85rem;color:var(--muted)">Criado para vender. Automático. Atemporal.</div>
+        </div>
+      </div>
+      <a class="action" id="activateBtn" href="#" aria-label="Ativar site">Ativar Meu Site</a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <span class="eyebrow">Pronto hoje</span>
+            <h2 class="title">Seu site bonito, rápido e que converte — pronto em minutos.</h2>
+            <p class="subtitle">Design minimalista, CTA claro para WhatsApp, SEO local e velocidade. Ideal para negócios que querem resultado real: vendas, reservas e conversas que viram clientes.</p>
+
+            <div style="display:flex;gap:12px;margin-top:18px">
+              <a class="action" href="https://wa.me/5547999999999?text=Ol%C3%A1%2C+quero+ativar+meu+site+GoSites" target="_blank">Falar no WhatsApp</a>
+              <button class="action" id="sampleBtn" style="background:transparent;color:var(--brand);border:2px solid var(--brand);">Ver demo</button>
+            </div>
+
+            <div class="grid" style="margin-top:18px">
+              <div class="card fade-up">
+                <h3>🚀 Ativação em horas</h3>
+                <p>Pagamento antecipado garante ativação imediata e suporte para conectar seu WhatsApp e Google Business.</p>
+              </div>
+              <div class="card fade-up">
+                <h3>📱 Conversões no WhatsApp</h3>
+                <p>Botões, mensagens prontas e UTM para medir o que realmente traz vendas.</p>
+              </div>
+              <div class="card fade-up">
+                <h3>💡 SEO Local</h3>
+                <p>Meta tags, schema e conteúdo focado para achar clientes na sua cidade.</p>
+              </div>
+            </div>
+
+            <div class="pricing" style="margin-top:12px">
+              <div class="price">
+                <h4>Starter</h4>
+                <div class="value">R$197 / mês</div>
+                <div class="muted">Botão WhatsApp, 1 página otimizada, suporte básico.</div>
+              </div>
+              <div class="price">
+                <h4>Pro</h4>
+                <div class="value">R$297 / mês</div>
+                <div class="muted">Imagens e textos personalizados + SEO local.</div>
+              </div>
+              <div class="price">
+                <h4>Premium</h4>
+                <div class="value">R$497 / mês</div>
+                <div class="muted">Integrações, SEO avançado e gestão de campanhas.</div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="hero-media" aria-hidden="true">
+            <img src="lugar.jpg" alt="Preview do site" loading="lazy">
+            <small style="color:var(--muted);margin-top:8px">Preview real — adaptável</small>
+          </div>
+        </div>
+      </section>
+
+      <section style="margin-top:18px">
+        <div style="display:flex;gap:18px;align-items:center;justify-content:space-between">
+          <div>
+            <h3 style="margin-bottom:6px">Menos ruído. Mais vendas.</h3>
+            <p class="muted">Estratégia testada: CTA direto no WhatsApp + texto focado no cliente. Implementamos o resto.</p>
+          </div>
+          <div style="max-width:360px">
+            <div class="card">
+              <h3>Garantia de ativação</h3>
+              <p class="muted">Pagamento antecipado = prioridade. Trabalhamos com Pix, PayPal e transferência.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta" style="margin-top:26px">
+        <div>
+          <h3>Quer vender mais sem complicação?</h3>
+          <div style="opacity:.95;margin-top:6px">Ative hoje: configuramos WhatsApp, Google e o site — você só recebe as vendas.</div>
+        </div>
+        <div>
+          <a class="cta-btn" href="https://wa.me/5547999999999?text=Ol%C3%A1%2C+quero+ativar+meu+site+GoSites" target="_blank">Ativar agora</a>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div>© 2025 GoSites • Criado por <strong>GooSite</strong> — design limpo, foco em vendas.</div>
+      <div style="margin-top:8px;color:var(--muted);font-size:0.9rem">Feito para capitães, donos de restaurantes, salões e pequenos negócios que querem clientes reais.</div>
+    </footer>
+  </div>
+
+  <!-- floating whatsapp -->
+  <a class="whatsapp" href="https://wa.me/5547999999999?text=Ol%C3%A1%2C+estou+interessado+no+GoSites" target="_blank" aria-label="Falar no WhatsApp">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+      <path d="M20.5 3.5C18.2 1.2 15 0 11.7 0 5.2 0 0 5.2 0 11.7c0 2 0.5 3.9 1.5 5.6L0 24l6.9-1.8c1.6 0.9 3.5 1.3 5.3 1.3 6.5 0 11.7-5.2 11.7-11.7 0-3.3-1.2-6.5-3.4-8.9z" fill="#fff" opacity="0.06"/>
+      <path d="M17.4 14.2c-0.3-0.1-1.9-0.9-2.1-1-0.2-0.1-0.4-0.1-0.6 0-0.2 0.1-0.7 0.3-1.1 0.5-0.4 0.2-0.7 0.2-1.2 0.1-0.4-0.1-1.2-0.4-2-1.2-0.8-0.8-1-1.6-1.1-2-0.1-0.4 0-0.8 0.2-1.1 0.2-0.3 0.5-0.6 0.7-0.9 0.2-0.3 0.2-0.6 0.1-0.9-0.1-0.2-0.6-1.5-0.8-2-0.2-0.5-0.5-0.3-0.8-0.3-0.3 0-0.8 0-1.2 0-0.5 0-1.1 0.2-1.7 0.8-0.6 0.6-2 2-2 4.8 0 2.8 2 5.5 4.6 6.1 0.5 0.1 0.9 0.2 1.4 0.2 0.6 0 1-0.1 1.4-0.2 0.4-0.1 1.4-0.6 1.6-0.9 0.1-0.3 0.1-0.6 0.1-0.9 0-0.2 0-0.4-0.1-0.5z" fill="#fff"/>
+    </svg>
+    <small>Falar</small>
+  </a>
+
+  <script>
+    // Simple visibility animation
+    document.addEventListener('DOMContentLoaded', function(){
+      document.querySelectorAll('.fade-up').forEach((el,i)=>{
+        setTimeout(()=>el.classList.add('visible'), 120*i);
+      });
+
+      // Smooth demo button scroll to CTA
+      document.getElementById('sampleBtn').addEventListener('click', function(e){
+        e.preventDefault();
+        document.querySelector('.cta').scrollIntoView({behavior:'smooth',block:'center'});
+      });
+
+      // Activate button opens WhatsApp with message + UTM
+      document.getElementById('activateBtn').addEventListener('click', function(e){
+        e.preventDefault();
+        const phone = '5547999999999';
+        const text = encodeURIComponent('Ol\u00E1, quero ativar meu site GoSites — plano Starter.');
+        const url = `https://wa.me/${phone}?text=${text}`;
+        window.open(url,'_blank');
+      });
+    });
+  </script>
+</body>
+</html>
